@@ -1,0 +1,76 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+    <title>CRUD JavaScript</title>
+</head>
+<body class="bg-light">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col bg-dark ">
+            <nav class="navbar navbar-light bg-dark">
+                <a class="nav-link text-secondary font-weight-boldt text-right" href="/logout">Logout</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row h-100 ">
+        <div class="col-2  bg-white list-group">
+            <ul class="nav nav-tabs my-2 flex-column nav-pills" >
+<!--                <li class="nav-item" id="blockMenuforAdmin">-->
+<!--                    <a class="nav-link active " data-toggle="tab" href="#main1">Admin</a>-->
+<!--                </li>-->
+                <li class="nav-item" id="blockMenuforUser" >
+                    <a class="nav-link " id="menuUser" data-toggle="tab" href="#main2">User</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col my-3 mx-3 tab-content">
+            <div class="tab-pane active" id="main1"><h2>User panel</h2>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="usersTable" data-toggle="tab" href="#tab1">Users table</a>
+                    </li>
+
+                </ul>
+
+                <div class="row tab-content">
+                    <div class="col  mx-3 border border-light tab-pane in active" id="tab1" style="background-color: #f5f5f5">
+                        <h5>All users</h5>
+                        <div class="row bg-white ">
+                            <div class="col my-3  ">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">First Name</th>
+                                        <th scope="col">Last Name</th>
+                                        <th scope="col">Password</th>
+                                        <th scope="col">Role</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="table">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="/webjars/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
+        <script src="/codeUser.js"></script>
+
+</body>
+</html>

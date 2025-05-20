@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+<h1>Login Form</h1>
+<div th:if="${param.error}">
+    Invalid username or password
+</div>
+<div th:if="${param.logout}">
+    You have been logged out
+</div>
+<form th:action="@{/login}" method="post">
+    <div>
+        <label>Username: <input type="text" name ="username" /></label>
+    </div>
+    <div>
+        <label>Password: <input type="password" name = "password"></label>
+    </div>
+    <div><input type="submit" value="Sign in"></div>
+</form>
+</body>
+</html>
