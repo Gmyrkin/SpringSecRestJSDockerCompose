@@ -13,7 +13,6 @@ import ru.spb.db.rest.spring.exmp315.SpringRestAPI.handler.UserNotCreatedExcepti
 import ru.spb.db.rest.spring.exmp315.SpringRestAPI.models.User;
 import ru.spb.db.rest.spring.exmp315.SpringRestAPI.service.UserServiceImpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
